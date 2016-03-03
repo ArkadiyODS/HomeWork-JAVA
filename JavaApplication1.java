@@ -20,8 +20,7 @@ public class JavaApplication1 {
         Scanner sc = new Scanner(System.in); 
         int minutePrice = 15;
         long dayInMlseconds = 86400000, conversationTime = 0;
-        Date start, end, noon;  
-        String noonTime = "00:00:00";
+        Date start, end;
         SimpleDateFormat tf = new SimpleDateFormat("HH:mm:ss");
         
         System.out.print("Please enter start time in format HH:mm:ss: ");
