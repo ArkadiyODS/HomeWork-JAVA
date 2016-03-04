@@ -1,0 +1,48 @@
+package hw_dragonfight;
+
+/**
+ *
+ * @author Arkadiy
+ */
+public class Hw_DragonFight {
+
+    public static void main(String[] args) {
+       int dHealth, dAttack, sHealth, sAttack, minSquad = 0, maxSquad = 0;
+        dHealth = 600;
+        dAttack = 50;
+        sHealth = 10;
+        sAttack = 10;
+        
+        int dDamage = 0, sKilled, squad;
+        
+        sKilled = dAttack / sHealth;
+        maxSquad = sKilled;
+        
+        while(dDamage < dHealth) {
+            minSquad = maxSquad; 
+            maxSquad+=sKilled;
+            dDamage+= maxSquad * sAttack;
+        }
+        
+        
+        dDamage = 0;
+        squad = minSquad;
+        int squadHealth = squad * sHealth;
+        
+        outer:
+        while (true){
+       
+        while(true) {
+            dDamage+= squad*sAttack;
+            squadHealth-= dAttack;
+            squad = java.lang.Math.round((float)squadHealth / sHealth);
+            if(squad <= 0) break; 
+            else if(dDamage < dHealth)
+                break outer;
+        } 
+        
+        } 
+        
+    }
+    
+}
