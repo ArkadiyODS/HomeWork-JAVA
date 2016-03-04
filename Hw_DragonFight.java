@@ -41,7 +41,7 @@ public class Hw_DragonFight {
         dDamage = 0;
          
         
-        sKilled = dAttack / sHealth;
+        sKilled = (int) java.lang.Math.ceil((double) dAttack / sHealth) ;
         maxSquad = sKilled;        
         firstAttack = (int) java.lang.Math.ceil((double)dHealth/sAttack) ;
                 
