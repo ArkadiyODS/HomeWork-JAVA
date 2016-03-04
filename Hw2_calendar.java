@@ -1,9 +1,8 @@
-package hw2_calendar;
 
-/**
- *
- * @author Arkadiy
+/*
+ * 18.	Какая дата будет через N дней? Рекомендуется использование типа GregorianCalendar.
  */
+package hw2_calendar;
 
 import java.util.*;
 
