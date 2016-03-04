@@ -1,13 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 7.	Пользователь вводит с клавиатуры время начала и время завершения телефонного разговора (часы, минуты и секунды). 
+ * Посчитать стоимость разговора, если стоимость минуты составляет 15 копеек, с учётом посекундной тарификации.
  */
-package javaapplication1; 
-/**
- *
- * @author Arkadiy
- */ 
+package javaapplication1;  
 import java.text.*;
 import java.util.*;
 
